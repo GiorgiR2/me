@@ -1,0 +1,179 @@
+
+@import "./variables.sass"
+
+html #root .base .main
+    .introduction, .tools-i-use, .engineering-projects
+      padding-top: 10px
+
+    h2
+      margin: 5px 0 5px 0
+      font-weight: 600
+      font-size: 20px
+
+    .introduction
+      height: fit-content
+
+      h3
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+
+      .my-face
+        float: right
+        width: 300px
+        height: 200px
+        border-radius: 20px
+        // position: absolute
+
+    .main-title
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 400
+      font-size: 26px
+
+    .cat-title
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 24px
+
+    .projects
+      .main-title
+        margin-top: 15px
+
+
+      .projectDisplay
+        display: flex
+        justify-content: space-between
+      
+        .interactiveWindow
+          width: $project-frame-w
+          height: $project-frame-h
+
+          background-color: #112233
+
+          &:hover,
+          &:active
+            .tools
+              visibility: visible
+              background-color: #c4c4c4
+              opacity: 0.8
+
+          .visible, .tools
+            width: $project-frame-w
+            height: $project-frame-h
+            
+          .visible
+            &:hover,
+            &:active
+              filter: blur(3px)
+
+            img
+              // height: calc(100% - 34px)
+              height: 100%
+              margin-left: 105px
+              // position: absolute
+              // margin-left: 8%
+              // display: none
+
+            .projectName
+              position: absolute
+              background: #c4c4c4
+              color: $bg-color
+              width: fit-content
+              padding: 2px 6px 2px 6px
+              margin-top: 400px
+              margin-left: 5px
+          
+          .tools
+            position: absolute
+            color: $bg-color
+            display: block
+            z-index: 3
+            visibility: hidden
+            transition-duration: 0.1s
+            width: 45.6%
+            height: $project-frame-h
+            padding-top: 150px
+
+            ul 
+              list-style-type: none
+
+            h2
+              text-align: center
+              width: 100%
+              color: #fff
+
+            ul li
+              color: #024072
+
+            ul
+              // width: 100%
+              margin: 0 auto 0 auto
+              width: fit-content
+              display: flex
+                
+              li
+                background-color: #fff
+                border: 1.5px solid #ffff
+                border-radius: 8px
+                margin: 0 4px 0 4px
+                padding: 4px 10px 4px 10px
+
+            a
+              display: block
+              text-decoration: none
+              margin-top: 8px
+              width: 100%
+              text-align: center
+              color: #fff
+
+        .switch
+          // position: relative
+          // top: -50%
+          // left: 100%
+          // transform: translate(0, 50%)
+          width: 6px
+          margin: auto
+          // float: right
+          // margin-right: 6px
+          
+          .cube
+            margin-top: 8px
+            width: 9px
+            height: 30px
+
+            background: #FFFFFF
+            border: 1px solid grey
+            border-radius: 2px
+            background-color: #c4c4c4
+
+            cursor: pointer
+
+          .active
+            background-color: lighten(#0093C2, 30%)
+
+    .tools-i-use
+      padding-top: 20px
+        
+      .engineeringProjects ul li .to
+        text-decoration-line: underline
+        color: #0093C2
+      
+      nav ul li a
+        color: $bg-color
+
+    .tools-i-use
+      nav ul
+        line-style-type: disc
+
+        li
+          margin: 10px 0px 10px 50px
+
+
+@media screen and (max-width: $max-width)
+  body #root .base .main
+    //pass

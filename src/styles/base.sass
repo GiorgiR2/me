@@ -1,0 +1,94 @@
+
+@import "./variables.sass"
+
+*
+  margin: 0
+  padding: 0
+  outline: 0
+  box-sizing: border-box
+
+.link
+  text-decoration: none
+  color: #fff
+
+html, body
+  width: 100vw
+  overflow-x: hidden
+  background-color: lighten(#abb8c3, 40%)
+
+html #root .base
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  .top
+    background-color: $header-color
+    color: white
+    width: 100vw
+    height: fit-content
+
+    .center
+      width: $main-width
+
+      margin: auto
+      
+      .my-name
+        width: 100%
+        text-align: center
+        padding: 20px 0 20px 0
+        
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 36px
+        line-height: 44px
+
+      .links
+        width: 100%
+        background-color: #0093C2
+        display: flex
+        justify-content: space-between
+
+        .to .rss-icon
+          width: 25px
+          margin: 12px 12px 0 0
+
+        nav ul
+          display: flex
+          list-style: none
+
+          li
+            padding: 12px 18px 12px 18px
+
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 20px
+            line-height: 24px
+
+            border-left: 1.5px solid grey
+
+            &:hover,
+            &:active
+              background-color: #00a0d3
+
+  .bottom
+    background-color: $header-color
+    width: 100vw
+    height: 80px
+    margin-top: 15px
+    padding-top: 5px
+    
+    h2
+      text-align: center
+
+      .link
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+
+  .child
+    width: $max-width
+    margin: auto
