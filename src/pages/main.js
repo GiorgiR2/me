@@ -113,8 +113,9 @@ const Main = () => {
           <h2 className="cat-title">Other skills:</h2>
           <nav>
             <ul>
-              <li>Atmega Microcontroller Programming - C/Assembly</li>
+              {/*<li>Atmega Microcontroller Programming - C/Assembly</li>*/}
               <li>Analog and Digital circuits</li>
+              {/*<li>Engineering Graphics (drawing, autocad)</li>*/}
               <li>...etc</li>
             </ul>
           </nav>
