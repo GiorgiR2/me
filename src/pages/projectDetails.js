@@ -46,7 +46,7 @@ const ProjectDetails = () => {
 
   return (
     <Base>
-      <div className="frame2">
+      <div className="main">
         <div className="tituli">
           <h2 className="name">
             <span className="number">{n + 1}</span>

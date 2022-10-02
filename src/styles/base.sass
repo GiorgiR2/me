@@ -15,6 +15,7 @@ html, body
   width: 100vw
   overflow-x: hidden
   background-color: lighten(#abb8c3, 40%)
+  background-color: #F0F0F0
 
 html #root .base
   min-height: 100vh
@@ -72,6 +73,12 @@ html #root .base
             &:hover,
             &:active
               background-color: #00a0d3
+
+  .child .main
+    padding: 15px
+    background-color: #fff
+    width: $main-width
+    margin: 10px 0 0 -10px
 
   .bottom
     background-color: $header-color
