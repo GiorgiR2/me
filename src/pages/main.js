@@ -125,7 +125,7 @@ const Main = () => {
             <ul>
               {engineeringProjects.map((el, n) => (
                 <li>
-                  <Link to={el.link} className="to" replace>
+                  <Link to={el.link} className="to" reload>
                     Project #{n + 1} - {el.title}
                   </Link>
                 </li>

@@ -5,7 +5,6 @@ import Main from "./pages/main";
 import Projects from "./pages/projects";
 import ProjectDetails from "./pages/projectDetails";
 import Links from "./pages/links";
-import Archive from "./pages/archive";
 
 function App() {
   return (
@@ -15,7 +14,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/:projectId" element={<ProjectDetails />} />
         <Route path="/links" element={<Links />} />
-        <Route path="/archive" element={<Archive />} />
+        <Route path="/archive" element={<div>no data...</div>} />
+        <Route path="/rss" element={<div>no rss</div>} />
       </Routes>
     </Router>
   );

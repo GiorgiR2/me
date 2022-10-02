@@ -36,7 +36,7 @@ const Base = ({ children }) => {
                 </li>
               </ul>
             </nav>
-            <Link to="#" className="to" replace>
+            <Link to="/rss" className="to">
               <img src={rssIcon} alt="rss" className="rss-icon" />
             </Link>
           </div>
