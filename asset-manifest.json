@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/me/static/css/main.5c6ea7bb.css",
-    "main.js": "/me/static/js/main.e6d7f392.js",
-    "static/media/typing-game.png": "/me/static/media/typing-game.6924b904ba2cce74b37a.png",
-    "static/media/discord-mern.png": "/me/static/media/discord-mern.bbc2de0d89cb58b8101f.png",
+    "main.js": "/me/static/js/main.6bacc5a4.js",
+    "static/media/tezgif-4-9b0a055a8e.jpg": "/me/static/media/tezgif-4-9b0a055a8e.c07ba62d4eed33a0ec53.jpg",
+    "static/media/ezgif-4-9793d1d7f2.jpg": "/me/static/media/ezgif-4-9793d1d7f2.21f245947bc14de5eb1d.jpg",
     "static/media/rss.svg": "/me/static/media/rss.1bb33b801e8bc30407860f4977460c89.svg",
     "index.html": "/me/index.html",
     "main.5c6ea7bb.css.map": "/me/static/css/main.5c6ea7bb.css.map",
-    "main.e6d7f392.js.map": "/me/static/js/main.e6d7f392.js.map"
+    "main.6bacc5a4.js.map": "/me/static/js/main.6bacc5a4.js.map"
   },
   "entrypoints": [
     "static/css/main.5c6ea7bb.css",
-    "static/js/main.e6d7f392.js"
+    "static/js/main.6bacc5a4.js"
   ]
 }
