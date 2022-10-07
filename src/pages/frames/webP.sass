@@ -1,0 +1,117 @@
+@import "../../styles/variables.sass"
+
+html #root .base .main
+    .projects
+      .main-title
+        margin-top: 15px
+
+      .projectDisplay
+        display: flex
+        justify-content: space-between
+      
+        .interactiveWindow
+          width: $project-frame-w
+          height: $project-frame-h
+
+          background-color: #112233
+          margin-right: 8px
+
+          &:hover,
+          &:active
+            .tools
+              visibility: visible
+              background-color: #c4c4c4
+              opacity: 0.8
+
+          .visible, .tools
+            width: $project-frame-w
+            height: $project-frame-h
+            
+          .visible
+            &:hover,
+            &:active
+              filter: blur(3px)
+
+            img
+              // height: calc(100% - 34px)
+              height: 100%
+              margin-left: 105px
+
+            .projectName
+              position: absolute
+              background: $bg-color
+              color: #000
+              width: fit-content
+              padding: 3px 8px 3px 8px
+              margin-top: 398px
+              margin-left: 3px
+          
+          .tools
+            position: absolute
+            color: $bg-color
+            display: block
+            z-index: 3
+            visibility: hidden
+            transition-duration: 0.1s
+            width: $project-frame-w
+            height: $project-frame-h
+            padding-top: 150px
+
+            ul 
+              list-style-type: none
+
+            h2
+              text-align: center
+              width: 100%
+              font-size: 1.8rem
+              color: #fff
+              font-weight: 600
+
+            ul
+              // width: 100%
+              margin: 0 auto 0 auto
+              width: fit-content
+              display: flex
+                
+              li
+                color: #024072
+                font-size: 17px
+                background-color: #fff
+                border: 1.5px solid #ffff
+                border-radius: 8px
+                margin: 0 4px 0 4px
+                padding: 4px 10px 4px 10px
+
+            a
+              font-size: 18px
+              display: block
+              // text-decoration: none
+              margin-top: 8px
+              width: 100%
+              text-align: center
+              color: #fff
+
+        .switch
+          // position: relative
+          // top: -50%
+          // left: 100%
+          // transform: translate(0, 50%)
+          width: 6px
+          margin: auto
+          // float: right
+          // margin-right: 6px
+          
+          .cube
+            margin-top: 8px
+            width: 9px
+            height: 30px
+
+            background: #FFFFFF
+            border: 1px solid grey
+            border-radius: 2px
+            background-color: #c4c4c4
+
+            cursor: pointer
+
+          .active
+            background-color: lighten(#0093C2, 30%)

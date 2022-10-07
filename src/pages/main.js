@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Base from "./base";
+import WebProjects from "./frames/webProjects";
 
 import "../styles/main.sass";
 
-import projects from "../js/projects";
 import engineeringProjects from "../js/engineeringProjects";
 
 const Main = () => {
-  const [currentProjectN, setCurrentProjectN] = useState(0);
-
   return (
     <Base>
       <div className="main">
@@ -38,53 +36,7 @@ const Main = () => {
           </h3>
         </div>
 
-        <div className="projects">
-          <h2 className="main-title">Web Projects_</h2>
-          <div className="projectDisplay">
-            <div className="interactiveWindow">
-              <div className="tools">
-                <h2>Tools</h2>
-                <ul>
-                  {projects[currentProjectN].used.map((tool) => (
-                    <li>{tool}</li>
-                  ))}
-                </ul>
-                <a
-                  href={projects[currentProjectN].link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  open in github
-                </a>
-              </div>
-
-              <div className="visible">
-                <h2 className="projectName">
-                  {projects[currentProjectN].title}
-                </h2>
-                <img src={projects[currentProjectN].image} alt="none" />
-              </div>
-            </div>
-
-            <div className="switch">
-              {projects.map((el, n) => {
-                if (n === currentProjectN)
-                  return (
-                    <div
-                      className="cube active"
-                      onClick={() => setCurrentProjectN(n)}
-                    ></div>
-                  );
-                return (
-                  <div
-                    className="cube"
-                    onClick={() => setCurrentProjectN(n)}
-                  ></div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
+        <WebProjects />
 
         <div className="tools-i-use">
           <h2 className="main-title">Technical Skills</h2>

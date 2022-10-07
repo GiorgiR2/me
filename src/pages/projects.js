@@ -1,11 +1,14 @@
 import React from "react";
 
 import Base from "./base";
+import WebProjects from "./frames/webProjects";
 
 const Projects = () => {
   return (
     <Base>
-      <div className="main">All Projects...</div>
+      <div className="main">
+        <WebProjects />
+      </div>
     </Base>
   );
 };
