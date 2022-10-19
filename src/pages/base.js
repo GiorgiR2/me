@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/base.sass";
@@ -6,13 +6,21 @@ import "../styles/base.sass";
 import rssIcon from "../icons/rss.svg";
 
 const Base = ({ children }) => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div className="base">
       <div className="top">
         <div className="center">
           <h1 className="my-name">Giorgi Rakviashvili's Webpage</h1>
           <div className="links">
-            <nav>
+            <div className="toggle-btn" onClick={() => setToggle(!toggle)}>
+              <div />
+              <div />
+              <div />
+            </div>
+
+            <nav className={toggle ? "visible" : ""}>
               <ul>
                 <li>
                   <Link to="/" className="link" reload>
