@@ -13,21 +13,23 @@ const Main = () => {
       <div className="projectDisplay">
         <div className="interactiveWindow">
           <div className="tools">
-            <h2>Tools</h2>
-            <nav>
-              <ul>
-                {projects[currentProjectN].used.map((tool) => (
-                  <li>{tool}</li>
-                ))}
-              </ul>
-            </nav>
-            <a
-              href={projects[currentProjectN].link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              open in github
-            </a>
+            <div className="vr-center">
+              <h2>Tools</h2>
+              <nav>
+                <ul>
+                  {projects[currentProjectN].used.map((tool) => (
+                    <li>{tool}</li>
+                  ))}
+                </ul>
+              </nav>
+              <a
+                href={projects[currentProjectN].link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                open in github
+              </a>
+            </div>
           </div>
 
           <div className="visible">

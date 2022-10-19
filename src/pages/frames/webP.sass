@@ -60,42 +60,50 @@ html #root .base .main
             z-index: 3
             visibility: hidden
             transition-duration: 0.1s
-            padding-top: 150px
+            // padding-top: 150px
 
-            h2
-              text-align: center
-              width: 100%
-              font-size: 1.8rem
-              color: #fff
-              font-weight: 600
+            .vr-center
+              margin-top: 150px
+              // margin: auto
+              // position: absolute
+              // top: 50%
+              // left: 50%
+              // transition: translate(50%, -50%)
 
-            nav ul
-              // width: 800px//$project-frame-w
-              // background-color: green
-              margin: auto
-              width: fit-content
-              // display: flex
-              list-style-type: none
+              h2
+                text-align: center
+                width: 100%
+                font-size: 1.8rem
+                color: #fff
+                font-weight: 600
 
-              li
-                display: inline-grid
-                color: #024072
-                font-size: 17px
-                background-color: #fff
-                border: 1.5px solid #ffff
-                border-radius: 8px
-                margin: 8px 4px 0 4px
-                padding: 4px 10px 4px 10px
+              nav ul
+                // width: 800px//$project-frame-w
+                // background-color: green
+                margin: auto
                 width: fit-content
+                // display: flex
+                list-style-type: none
 
-            a
-              font-size: 18px
-              display: block
-              // text-decoration: none
-              margin-top: 8px
-              width: 100%
-              text-align: center
-              color: #fff
+                li
+                  display: inline-grid
+                  color: #024072
+                  font-size: 17px
+                  background-color: #fff
+                  border: 1.5px solid #ffff
+                  border-radius: 8px
+                  margin: 8px 4px 0 4px
+                  padding: 4px 10px 4px 10px
+                  width: fit-content
+
+              a
+                font-size: 18px
+                display: block
+                // text-decoration: none
+                margin-top: 8px
+                width: 100%
+                text-align: center
+                color: #fff
 
         .switch
           width: 6px
@@ -129,17 +137,19 @@ html #root .base .main
 
         .visible, .tools
           width: calc(100% - 44px)
-          height: calc(100vw - 250px)
+          height: calc(100vw - 100px)
 
         .tools
           // height: 50%
+          .vr-center
+            margin-top: 20vw
 
         .visible
           // height: 50%
 
           .projectName
-            margin-top: calc(100vw - 282px) //398px
+            margin-top: calc(100vw - 132px) //398px
 
           img
             margin-left: 25px
-            height: calc(100vw - 250px)
+            height: calc(100vw - 100px)
