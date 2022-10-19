@@ -15,6 +15,7 @@ html #root .base .main
 
           background-color: #112233
           margin-right: 8px
+          text-align: center
 
           &:hover,
           &:active
@@ -34,8 +35,14 @@ html #root .base .main
 
             img
               // height: calc(100% - 34px)
-              height: 100%
-              margin-left: 105px
+              // margin-left: 105px
+              // height: 100%
+              // margin-left: calc(50% - 270px)
+              // object-fit: cover
+              // display: none
+              max-width: 100%
+              max-height: 100%
+              vertical-align: middle
 
             .projectName
               position: absolute
@@ -53,12 +60,7 @@ html #root .base .main
             z-index: 3
             visibility: hidden
             transition-duration: 0.1s
-            width: $project-frame-w
-            height: $project-frame-h
             padding-top: 150px
-
-            ul 
-              list-style-type: none
 
             h2
               text-align: center
@@ -67,20 +69,24 @@ html #root .base .main
               color: #fff
               font-weight: 600
 
-            ul
-              // width: 100%
-              margin: 0 auto 0 auto
+            nav ul
+              // width: 800px//$project-frame-w
+              // background-color: green
+              margin: auto
               width: fit-content
-              display: flex
-                
+              // display: flex
+              list-style-type: none
+
               li
+                display: inline-grid
                 color: #024072
                 font-size: 17px
                 background-color: #fff
                 border: 1.5px solid #ffff
                 border-radius: 8px
-                margin: 0 4px 0 4px
+                margin: 8px 4px 0 4px
                 padding: 4px 10px 4px 10px
+                width: fit-content
 
             a
               font-size: 18px
@@ -92,14 +98,8 @@ html #root .base .main
               color: #fff
 
         .switch
-          // position: relative
-          // top: -50%
-          // left: 100%
-          // transform: translate(0, 50%)
           width: 6px
           margin: auto
-          // float: right
-          // margin-right: 6px
           
           .cube
             margin-top: 8px
@@ -115,3 +115,31 @@ html #root .base .main
 
           .active
             background-color: lighten(#0093C2, 30%)
+
+@media screen and (max-width: $max-width)
+  html #root .base .main .projects
+    .projectDisplay
+      .interactiveWindow
+        width: calc(100% - 12px)
+        height: fit-content
+        text-align: center
+        // white-space: nowrap
+        // height: calc(100vw - 200px)
+        // height: $project-frame-h
+
+        .visible, .tools
+          width: calc(100% - 44px)
+          height: calc(100vw - 250px)
+
+        .tools
+          // height: 50%
+
+        .visible
+          // height: 50%
+
+          .projectName
+            margin-top: calc(100vw - 282px) //398px
+
+          img
+            margin-left: 25px
+            height: calc(100vw - 250px)

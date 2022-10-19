@@ -14,11 +14,13 @@ const Main = () => {
         <div className="interactiveWindow">
           <div className="tools">
             <h2>Tools</h2>
-            <ul>
-              {projects[currentProjectN].used.map((tool) => (
-                <li>{tool}</li>
-              ))}
-            </ul>
+            <nav>
+              <ul>
+                {projects[currentProjectN].used.map((tool) => (
+                  <li>{tool}</li>
+                ))}
+              </ul>
+            </nav>
             <a
               href={projects[currentProjectN].link}
               target="_blank"
