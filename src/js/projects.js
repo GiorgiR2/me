@@ -1,5 +1,5 @@
 import discordScreen from "../screens/ezgif-4-9793d1d7f2.jpg";
-import typingScreen from "../screens/tezgif-4-9b0a055a8e.jpg";
+import typingScreen from "../screens/tezgif-4-9b0a055a8e (1).jpg";
 // import cleanImage from "../screens/clean-image.png";
 
 const projects = [

@@ -6,6 +6,7 @@ import projects from "../../js/projects";
 
 const Main = () => {
   const [currentProjectN, setCurrentProjectN] = useState(0);
+  const [loaded, setLoad] = useState(false);
 
   return (
     <div className="projects">
@@ -17,8 +18,8 @@ const Main = () => {
               <h2>Tools</h2>
               <nav>
                 <ul>
-                  {projects[currentProjectN].used.map((tool) => (
-                    <li>{tool}</li>
+                  {projects[currentProjectN].used.map((el) => (
+                    <li>{el}</li>
                   ))}
                 </ul>
               </nav>
@@ -34,7 +35,14 @@ const Main = () => {
 
           <div className="visible">
             <h2 className="projectName">{projects[currentProjectN].title}</h2>
-            <img src={projects[currentProjectN].image} alt="none" />
+            <img
+              src={projects[currentProjectN].image}
+              alt="none"
+              onLoad={() => {
+                setLoad(true);
+              }}
+            />
+            {!loaded && <h1 className="loading">loading...</h1>}
           </div>
         </div>
 
@@ -48,7 +56,13 @@ const Main = () => {
                 ></div>
               );
             return (
-              <div className="cube" onClick={() => setCurrentProjectN(n)}></div>
+              <div
+                className="cube"
+                onClick={() => {
+                  setCurrentProjectN(n);
+                  setLoad(false);
+                }}
+              ></div>
             );
           })}
         </div>
