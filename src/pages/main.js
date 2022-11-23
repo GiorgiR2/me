@@ -45,7 +45,7 @@ const Main = () => {
           <nav>
             <ul>
               <li>JS/TS</li>
-              <li>React</li>
+              <li>React, Next.js</li>
               <li>Redux</li>
               <li>RestAPI</li>
               <li>MongoDB</li>

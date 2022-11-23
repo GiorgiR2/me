@@ -1,6 +1,6 @@
 const engineeringProjects = [
   {
-    title: "DC To AC Converter",
+    title: "DC To DC Converter (±24 power supply)",
     data: "../engineering/project1.txt",
     link: "project/0001",
     images: ["1", "2", "3"],
