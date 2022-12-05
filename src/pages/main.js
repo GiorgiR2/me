@@ -69,7 +69,7 @@ const Main = () => {
               {/*<li>Atmega Microcontroller Programming - C/Assembly</li>*/}
               <li>Analog and Digital circuits</li>
               {/*<li>Engineering Graphics (drawing, autocad)</li>*/}
-              <li>C++</li>
+              <li>C/C++</li>
               <li>...etc</li>
             </ul>
           </nav>

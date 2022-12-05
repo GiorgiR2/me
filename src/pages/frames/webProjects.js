@@ -23,13 +23,24 @@ const Main = () => {
                   ))}
                 </ul>
               </nav>
-              <a
-                href={projects[currentProjectN].link}
-                target="_blank"
-                rel="noreferrer"
-              >
-                open in github
-              </a>
+              <div className="github">
+                <a
+                  href={projects[currentProjectN].link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  open in github
+                </a>
+                {projects[currentProjectN].liveView ? (
+                  <a
+                    href={projects[currentProjectN].liveView}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    live view
+                  </a>
+                ) : null}
+              </div>
             </div>
           </div>
 

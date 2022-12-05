@@ -5,15 +5,17 @@ import typingScreen from "../screens/typing-game.png";
 const projects = [
   {
     title: "Discord Clone",
-    used: ["js", "react", "react native", "mongodb", "socketio"],
+    used: ["nodejs", "react", "redux", "express", "mongodb", "socketio"],
     image: discordScreen,
     link: "https://github.com/GiorgiR2/discord-clone-react",
+    liveView: "https://giorgir2.github.io/discord-clone",
   },
   {
     title: "Typing Game",
-    used: ["vanilla", "python/flask", "sqlite", "socketio"],
+    used: ["JS Dom", "python/flask", "sqlite", "socketio"],
     image: typingScreen,
     link: "https://github.com/GiorgiR2/typing-game",
+    liveView: null,
   },
   // {
   //   title: "no name",
