@@ -14,16 +14,16 @@
 html, body
   // width: 100vw
   // overflow-x: hidden
-  background-color: lighten(#abb8c3, 40%)
-  background-color: $bg-color
+  // background-color: lighten(#abb8c3, 40%)
+  background-color: #f8f8f8// $bg-color
 
-html #root .base
+html #root
   min-height: 100vh
   display: flex
   flex-direction: column
   justify-content: space-between
 
-  .top
+  header
     background-color: $header-color
     color: white
     width: 100%
@@ -50,7 +50,7 @@ html #root .base
         max-width: 100%
         height: fit-content
         min-height: 47px
-        background-color: #0093C2
+        background-color: #3498db//#0093C2
         display: flex
         justify-content: space-between
 
@@ -88,7 +88,7 @@ html #root .base
             
             &:hover,
             &:active
-              background-color: #00a0d3
+              background-color: darken(#3498db, 4%) //#00a0d3
               text-decoration: underline
 
             .link
@@ -106,8 +106,9 @@ html #root .base
     background-color: #fff
     width: $main-width
     margin: 10px 0 0 -10px
+    box-shadow: 14px 14px 90px -10px rgb(0 0 0 / 15%)
 
-  .bottom
+  footer
     background-color: $header-color
     // width: 100vw
     height: 80px
@@ -127,17 +128,17 @@ html #root .base
     width: $max-width
     margin: auto
 
-@media screen and (max-width: $max-width)
+@media screen and (max-width: 920px)
   // *
   //   outline: solid #f00 1px !important
 
   html, body
     width: 100%
 
-  html #root .base
+  html #root
     min-height: 100vh
 
-    .top
+    header
       width: 100%
       height: fit-content
 
@@ -164,7 +165,7 @@ html #root .base
         margin-left: 0
 
 @media screen and (max-width: 600px)
-  html #root .base .top .center
+  html #root header .center
       .links
         .toggle-btn
           display: block

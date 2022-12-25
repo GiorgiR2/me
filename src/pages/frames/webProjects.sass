@@ -1,6 +1,6 @@
 @import "../../styles/variables.sass"
 
-html #root .base .main
+html #root .main
     .projects
       .main-title
         margin-top: 15px
@@ -107,7 +107,7 @@ html #root .base .main
                 justify-content: center
 
                 a
-                  font-size: 1.3rem
+                  font-size: 1.2rem
                   // display: block
                   // text-decoration: none
                   margin-top: 8px
@@ -136,8 +136,8 @@ html #root .base .main
           .active
             background-color: #0093C2//lighten(#0093C2, 30%)
 
-@media screen and (max-width: $max-width)
-  html #root .base .main .projects
+@media screen and (max-width: 920px)
+  html #root .child .projects
     .projectDisplay
       .interactiveWindow
         width: calc(100% - 12px)

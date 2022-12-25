@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./webP.sass";
+import "./webProjects.sass";
 
 import projects from "../../js/projects";
 
@@ -37,7 +37,7 @@ const Main = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    live view
+                    live demo
                   </a>
                 ) : null}
               </div>
@@ -47,8 +47,8 @@ const Main = () => {
           <div className="visible">
             <h2 className="projectName">{projects[currentProjectN].title}</h2>
             <img
-              src={projects[currentProjectN].image}
-              alt="none"
+              src={projects[currentProjectN].image[0]}
+              alt={projects[currentProjectN].image[1]}
               onLoad={() => {
                 setLoad(true);
               }}

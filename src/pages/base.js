@@ -9,8 +9,8 @@ const Base = ({ children }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="base">
-      <div className="top">
+    <>
+      <header>
         <div className="center">
           <h1 className="my-name">Giorgi Rakviashvili's Webpage</h1>
           <div className="links">
@@ -49,16 +49,18 @@ const Base = ({ children }) => {
             </Link>
           </div>
         </div>
-      </div>
+      </header>
+
       <main className="child">{children}</main>
-      <div className="bottom">
+
+      <footer>
         <h2>
           <Link to="/" className="link" replace>
             https://giorgir.xyz
           </Link>
         </h2>
-      </div>
-    </div>
+      </footer>
+    </>
   );
 };
 

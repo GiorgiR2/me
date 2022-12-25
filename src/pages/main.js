@@ -45,7 +45,7 @@ const Main = () => {
           <nav>
             <ul>
               <li>JS/TS</li>
-              <li>React, Next.js</li>
+              <li>React</li>
               <li>Redux</li>
               <li>RestAPI</li>
               <li>MongoDB</li>
@@ -56,7 +56,7 @@ const Main = () => {
           <h2 className="cat-title">Tools / Software:</h2>
           <nav>
             <ul>
-              <li>Linux (void, i3 wm)</li>
+              <li>Gnu/Linux + i3wm</li>
               <li>NeoVim + tmux</li>
               <li>Figma</li>
               <li>Git</li>
